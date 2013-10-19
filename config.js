@@ -44,8 +44,8 @@ config = {
     // When running Ghost in the wild, use the production environment
     // Configure your URL and mail settings here
     production: {
-        url: 'http://'+process.env.OPENSHIFT_APP_DNS,
-#        url: 'http://www.icnagy.com',
+//        url: 'http://'+process.env.OPENSHIFT_APP_DNS,
+        url: 'http://www.icnagy.com',
         mail: {
             transport: 'SMTP',
             options: {
@@ -54,7 +54,6 @@ config = {
                     user: 'postmaster@icnagy.com',
                     pass: '1fgfhzt8hc94'
                 }
-            }
         },
         database: {
             client: 'sqlite3',
