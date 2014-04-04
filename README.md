@@ -13,6 +13,9 @@ Want to report a bug, request a feature, or help us build or translate Ghost? Ch
 ## Getting Started
 
 There are **two** main ways to get started with Ghost, take care to use the method which best suits your needs.
+	rhc set-env NODE_ENV=production --app $appname
+	
+Where $appname is the name of your application.  This was due to the pre_start_nodejs script not running on a restart.
 
 **Please note** - the downloadable zip files we provide on [Ghost.org](http://ghost.org/download) are pre-built packages designed for getting started quickly. Cloning from the git repository requires you to install several dependencies and build the assets yourself. 
 
